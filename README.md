@@ -1,14 +1,10 @@
 # flet-github-action-workflows
 
-A collection of useful GitHub Action Workflows to ease the building of [Flet](https://flet.dev) applications.
+A collection of useful GitHub Action Workflows to ease the building of various applications.
 
-**VIDEO TUTORIAL:** https://youtu.be/ObO-D2TD_wo
-
-Feel free to adapt all the workflows in this repo to your own projects: [flet.dev/publish](https://flet.dev/publish)
+Feel free to adapt all the workflows in this repo to your own projects.
 
 ## File Structure
-
-As you might know, Flet is a cross-platform framework. This means, from a single codebase you can target multiple platforms: Android (AAB, APK), iOS (IPA), Linux, macOS, Windows, and Web.
 
 The repository contains the following workflows (located in the [`.github/workflows`](.github/workflows) directory):
 
@@ -55,7 +51,7 @@ Thanks to their creators! :)
 
 ## For Your Information (FYI)
 
-- Customize the build command for your specific needs: [flet.dev/publish](https://flet.dev/publish)
+- Customize the build command for your specific needs.
 - All workflows are based on Flutter version `3.22.2` and Python version `3.12.2`.
 - You might find the below in some of the workflows:
   - `workflow_dispatch`: used to trigger the workflow manually from the Actions tab
@@ -71,7 +67,7 @@ Thanks to their creators! :)
     ```
     
     A step named `Patch for linux build` was added to the linux-related jobs/workflows which resolves this issue by installing the required dependencies.
-- The build commands are run in verbose mode (`--verbose`) to provide more information about the build process. Provide these logs when you are willing to report an issue on the [Flet repo](https://github.com/flet-dev/flet).
+- The build commands are run in verbose mode (`--verbose`) to provide more information about the build process.
 
 ## Contribution
 
@@ -81,5 +77,3 @@ You can contribute by adding more workflows or improving the existing ones.
 - Add a step for releasing the built artifacts to the GitHub releases
 - At the moment, `apk-build.yml`, for example, runs on `macos-latest`. Is it better (in terms of size/speed) to run it on `ubuntu-latest` or `windows-latest`?
 - It will be nice if we could take advantage of caching to speed up the builds.
-
-
